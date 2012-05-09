@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset xmlns="http://pmd.sf.net/ruleset/1.0.0" name="PMD 4.2.5 Starndard Ruleset"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd"
+	xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd">
+	<description>author: Adam Gabryś</description>
+	<rule ref="rulesets/basic.xml">
+		<exclude name="EmptyCatchBlock" />
+		<exclude name="EmptyFinallyBlock" />
+		<exclude name="EmptyIfStmt" />
+		<exclude name="EmptyInitializer" />
+		<exclude name="EmptyStaticInitializer" />
+		<exclude name="EmptyTryBlock" />
+		<exclude name="EmptyWhileStmt" />
+	</rule>
+	<rule ref="rulesets/braces.xml" />
+	<rule ref="rulesets/clone.xml">
+		<exclude name="ProperCloneImplementation" />
+	</rule>
+	<rule ref="rulesets/codesize.xml">
+		<exclude name="CyclomaticComplexity" />
+		<exclude name="ExcessiveClassLength" />
+		<exclude name="ExcessiveMethodLength" />
+		<exclude name="ExcessiveParameterList" />
+		<exclude name="ExcessivePublicCount" />
+		<exclude name="NPathComplexity" />
+		<exclude name="TooManyFields" />
+		<exclude name="TooManyMethods" />
+	</rule>
+	<rule ref="rulesets/controversial.xml">
+		<exclude name="AvoidFinalLocalVariable" />
+		<exclude name="CallSuperInConstructor" />
+		<exclude name="DataflowAnomalyAnalysis" />
+		<exclude name="DefaultPackage" />
+		<exclude name="OnlyOneReturn" />
+	</rule>
+	<rule ref="rulesets/coupling.xml">
+		<exclude name="ExcessiveImports" />
+	</rule>
+	<rule ref="rulesets/design.xml">
+		<exclude name="AvoidDeeplyNestedIfStmts" />
+		<exclude name="ConfusingTernary" />
+		<exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
+		<exclude name="MissingBreakInSwitch" />
+		<exclude name="SwitchStmtsShouldHaveDefault" />
+	</rule>
+	<rule ref="rulesets/finalizers.xml" />
+	<rule ref="rulesets/imports.xml" />
+	<rule ref="rulesets/junit.xml">
+		<exclude name="JUnitTestsShouldIncludeAssert" />
+		<exclude name="TestClassWithoutTestCases" />
+	</rule>
+	<rule ref="rulesets/logging-java.xml" />
+	<rule ref="rulesets/naming.xml">
+		<exclude name="AbstractNaming" />
+		<exclude name="LongVariable" />
+	</rule>
+	<rule ref="rulesets/optimizations.xml">
+		<exclude name="AvoidInstantiatingObjectsInLoops" />
+		<exclude name="LocalVariableCouldBeFinal" />
+		<exclude name="MethodArgumentCouldBeFinal" />
+	</rule>
+	<rule ref="rulesets/strictexception.xml" />
+	<rule ref="rulesets/strings.xml">
+		<exclude name="AvoidDuplicateLiterals" />
+	</rule>
+	<rule ref="rulesets/sunsecure.xml" />
+	<rule ref="rulesets/typeresolution.xml" />
+	<rule ref="rulesets/unusedcode.xml" />
+</ruleset>
