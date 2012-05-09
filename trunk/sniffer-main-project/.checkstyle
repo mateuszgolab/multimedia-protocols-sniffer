@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fileset-config file-format-version="1.2.0"
+	simple-config="true">
+	<local-check-config name="Sniffer Checkstye Rules"
+		location="checkstyle.xml" type="project" description="KSM Project Sniffer Checkstyle Rules">
+		<additional-data name="protect-config-file" value="true" />
+	</local-check-config>
+	<fileset name="all" enabled="true" check-config-name="Sniffer Checkstye Rules"
+		local="true">
+		<file-match-pattern match-pattern="src/main/."
+			include-pattern="true" />
+	</fileset>
+	<local-check-config name="Sniffer Test Checkstye Rules"
+		location="checkstyle_test.xml" type="project" description="KSM Project Sniffer Test Checkstyle Rules">
+		<additional-data name="protect-config-file" value="true" />
+	</local-check-config>
+	<fileset name="all" enabled="true" check-config-name="Sniffer Test Checkstye Rules"
+		local="true">
+		<file-match-pattern match-pattern="src/test/."
+			include-pattern="true" />
+	</fileset>
+</fileset-config>

@@ -1,0 +1,11 @@
+<plugins>
+	<plugin>
+		<class>ksm.rtp.module.RTPModule</class>
+	</plugin>
+	<plugin>
+		<class>ksm.mock.one.OneHostModule</class>
+	</plugin>
+	<plugin>
+		<class>ksm.mock.two.TwoHostsModule</class>
+	</plugin>
+</plugins>
